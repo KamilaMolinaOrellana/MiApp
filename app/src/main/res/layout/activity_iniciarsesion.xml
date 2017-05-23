@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoo"
+    tools:context="com.proyecto.com.myapplication.CapaDeNegocio.IniciarsesionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:weightSum="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/IniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Iniciar Sesión"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <EditText
+            android:id="@+id/nombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Nombre de Usuario"
+            android:inputType="textCapSentences|textAutoCorrect|textPersonName"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.148"
+            tools:layout_editor_absoluteX="-37dp" />
+
+        <EditText
+            android:id="@+id/contrasegna"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="contraseña"
+            android:inputType="textPassword|textVisiblePassword"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.261" />
+
+        <TextView
+            android:id="@+id/textDeseaRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:fontFamily="serif-monospace"
+            android:text="Desea Registrarse?"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.969" />
+
+        <TextView
+            android:id="@+id/espacio1"
+            android:layout_width="match_parent"
+            android:layout_height="146dp" />
+
+        <Button
+            android:id="@+id/buttonIniciarSesion"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="monospace"
+            android:text="Buscar Usuario"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.801" />
+
+        <TextView
+            android:id="@+id/espacio2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+
+        <TextView
+            android:id="@+id/Informacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Información del Usuario"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Completo"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dirección"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/direccion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Servicio"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/servicio"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefono"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idiomas"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idiomas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:id="@+id/buttonEliminar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="monospace"
+            android:text="Eliminar Usuario"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.801" />
+
+        <TextView
+            android:id="@+id/espacio5"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+</ScrollView >
